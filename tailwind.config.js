@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js,jsx,ts,tsx}"],
+  purge: ["src/pages/**/*.{js,ts,jsx,tsx}", "src/components/**/*.{js,ts,jsx,tsx}"],
   theme: {
     screens: {
       sm: "480px",
@@ -18,6 +18,11 @@ module.exports = {
       success: "#DFF2A1",
       warning: "#F7E488",
       error: "#F2B6B5",
+    },
+    fontWeight: {
+      normal: 400,
+      semibold: 600,
+      bold: 700,
     },
     extend: {},
   },
