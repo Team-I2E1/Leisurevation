@@ -1,15 +1,9 @@
 import "../styles/globals.css"
 import "../styles/tailwind.css"
 import type {AppProps} from "next/app"
-import { ThemeProvider } from "styled-components"
-import theme from "src/utils/theme"
 
 function MyApp({Component, pageProps}: AppProps) {
-  return (
-    <ThemeProvider theme={theme}>
-      <Component {...pageProps} />
-    </ThemeProvider>
-  )
+  return <Component {...pageProps} />
 }
 
 export default MyApp
