@@ -3,10 +3,13 @@ module.exports = {
   purge: ["src/pages/**/*.{js,ts,jsx,tsx}", "src/components/**/*.{js,ts,jsx,tsx}"],
   theme: {
     screens: {
+      xs: "360px",
       sm: "480px",
-      md: "768px",
-      lg: "976px",
-      xl: "1440px",
+      md: "600px",
+      lg: "768px",
+      xl: "976px",
+      "2xl": "1024px",
+      "3xl": "1440px",
     },
     colors: {
       primary: "#529B03",
