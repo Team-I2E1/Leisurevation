@@ -12,6 +12,8 @@ const Button = tw.button`
   bg-info
   text-xl
   font-semibold
+  active:scale-95
+  duration-100
 `
 
 export default Button
